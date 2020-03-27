@@ -3,6 +3,7 @@ body {font-family: 'Luckiest Guy', cursive;}
 nav  ul li {
   list-style: none;
   float: left;
+  font-size: 30px;
 }
 
 ul li a{
@@ -11,6 +12,8 @@ ul li a{
 }
 header h2{
   float: right;
+  font-size: 36px;
+  margin-top: -0px;
 }
 main h1 {
   padding-top: 200px;
