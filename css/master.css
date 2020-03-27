@@ -21,5 +21,7 @@ main{
 main button{
   background-color: black;
 color: white;
-font-size: 36px;
+font-size: 36px; 
+border-radius: 30px;
+font-weight: bold;
 }
