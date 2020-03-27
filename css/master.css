@@ -1,85 +1,25 @@
-/* position: absolute;
-width: 2754px;
-height: 1321px;
-left: -1470px;
-top: 63px;
+body {font-family: 'Luckiest Guy', cursive;}
 
-background: #000000;
- */
-
-/* Generate */
-
-.genMurderer{
-
-  position: absolute;
-  width: 306px;
-  height: 35px;
-  left: 567px;
-  top: 426px;
-  
-  font-family: Luckiest Guy;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 64px;
-  line-height: 64px;
-  
-  color: #FFFFFF;
+nav  ul li {
+  list-style: none;
+  float: left;
 }
 
-/* Random murder Mystery */
-
+ul li a{
+  color: black;
+  text-decoration: none;
+}
+header h2{
+  float: right;
+}
 main h1 {
-  position: absolute;
-  width: 902px;
-  height: 64px;
-  left: 269px;
-  top: 253px;
-  
-  font-family: Luckiest Guy;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 72px;
-  line-height: 72px;
-  
-  color: #000000;
+  padding-top: 200px;
 }
-
-/* Home | SQL GaMe | About | Contact */
-
-nav ul li {
-
-  position: absolute;
-  width: 782.76px;
-  height: 40.02px;
-  left: 15px;
-  top: 25px;
-  
-  font-family: Luckiest Guy;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 48px;
-  
-  color: #000000;
+main{
+  text-align: center;
 }
-
-/* SQL Murderer */
-
-header h2 {
-  position: absolute;
-  width: 392px;
-  height: 70px;
-  left: 1048px;
-  top: 8px;
-  
-  font-family: Marck Script;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 64px;
-  line-height: 80px;
-  
-  color: #000000;
+main button{
+  background-color: black;
+color: white;
+font-size: 36px;
 }
-
-
-

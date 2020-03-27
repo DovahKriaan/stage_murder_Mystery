@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/master.css">
-    <title>Home</title>
-  </head>
-  <body>
-    <header>
-      <h2>SQL Murderer</h2>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home |</a></li>
-          <li><a href="sql_game.html">SQL Game |</a></li>
-          <li><a href="about.html">About |</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-        <h1>Generate Random Murder Mystery</h1>
-        <button type="submit" name="btn_generateMurderer" onsubmit="" id="genMurderer">Generate</button>
-    </main>
-    <footer>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/master.css">
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy:regular" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+  </style>
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <h2>SQL Murderer</h2>
+    <nav>
       <ul>
-        <li><a href="home.html">Home</a></li>
+        <li><a href="home.html">Home |</a></li>
+        <li><a href="sql_game.html">SQL Game |</a></li>
+        <li><a href="about.html">About |</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </footer>
-  </body>
+    </nav>
+  </header>
+  <main>
+    <h1>Generate Random Murder Mystery</h1>
+    <button type="submit" name="btn_generateMurderer" onsubmit="" id="genMurderer">Generate</button>
+  </main>
+
+</body>
+
 </html>
 <!-- TODO: make nav -->
 <!-- TODO: make a generate button for generating random murder mysteries -->
-  <!-- IDEA: do this by getting all the names and generate a random value from that list
+<!-- IDEA: do this by getting all the names and generate a random value from that list
              and get change the first witness with random in the first 10 of the list
              and the second one from the last 10 of the list.
              The second one will be the witness if the first one is equeel to one has been generated before and the other way around-->
