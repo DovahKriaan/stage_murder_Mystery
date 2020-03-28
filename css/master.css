@@ -14,6 +14,12 @@ ul li a{
 color: black;
 text-decoration: none;
 }
+
+ul li a:hover{
+    color: black;
+    text-decoration: none;
+    font-size: xx-large;
+    }
 header h2{
 float: right;
 font-size: 36px;
@@ -34,6 +40,11 @@ color: white;
 font-size: 36px; 
 border-radius: 30px;
 font-weight: bold;
+transition: all .2s ease-in-out;
+}
+
+main button:hover{
+    transform: scale(1.1);
 }
 
 .container .inner {
