@@ -16,10 +16,10 @@ text-decoration: none;
 }
 
 ul li a:hover{
-    color: black;
-    text-decoration: none;
-    font-size: xx-large;
-    }
+color: black;
+text-decoration: none;
+font-size: xx-large;
+}
 header h2{
 float: right;
 font-size: 36px;
@@ -44,12 +44,12 @@ transition: all .2s ease-in-out;
 }
 
 main button:hover{
-    transform: scale(1.1);
+transform: scale(1.1);
 }
 
 .container .inner {
-    width: 0;
-    height:auto;
-    border-bottom: 457px solid black;
-    border-right: 1920px solid transparent;
+width: 0;
+height:auto;
+border-bottom: 457px solid black;
+border-right: 1920px solid transparent;
 }
