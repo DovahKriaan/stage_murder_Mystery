@@ -7,6 +7,6 @@
 // }
 
 
-function genedate_rnd_murderer(murderer, witness1, witness2) {
+function gen_rnd_witness(witness1, witness2) {
     
 }
