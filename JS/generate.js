@@ -7,6 +7,3 @@
 // }
 
 
-function gen_rnd_witness(witness1, witness2) {
-    
-}

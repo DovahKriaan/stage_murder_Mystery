@@ -1,4 +1,5 @@
 <?php
-include("../stage_murder_Mystery/html/home.html");
-
+include("../website/html/home.html");
+include("../website/config/config_db.php");
+include("../website/html");
  ?>

@@ -3,9 +3,9 @@ $DB_user = "root";
 $DB_pass = "";
 
 try {
-    $DB_connect = new PDO('mysql:host=localhost;dbname=sql-murder-mystery; $DB_user; $DB_pass');
+    $DB_connect = new PDO('mysql:host=localhost;dbname=sql-murder-mystery', 'root', '');
 } catch (PDOException $message) {
-    print "Error connection to DataBase" . $message->getMessage(); <br>
+    print "Error connection to DataBase" . $message->getMessage(); 
     die();
 }
 
