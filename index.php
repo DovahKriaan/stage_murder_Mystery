@@ -1,5 +1,5 @@
 <?php
 
-include("index.html");
+include("../stage_murder_Mystery/html/home.html");
 
  ?>
