@@ -40,11 +40,11 @@ color: white;
 font-size: 36px; 
 border-radius: 30px;
 font-weight: bold;
-transition: all .2s ease-in-out;
 }
 
 main button:hover{
-transform: scale(1.1);
+transform: scale(1.2);
+transition: all .5s ease-in-out;
 }
 
 .container .inner {
