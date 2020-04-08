@@ -1,3 +1,4 @@
 <?php
-include("html/home.html")
+include("/html/about.html");
+include("html/home.html");
  ?>
