@@ -38,7 +38,7 @@ main{
 text-align: center;
 }
 
-main button{
+main form input{
 background-color: black;
 color: white;
 font-size: 36px; 
@@ -46,7 +46,7 @@ border-radius: 30px;
 font-weight: bold;
 }
 
-main button:hover{
+main form input:hover{
 transform: scale(1.2);
 transition: all .5s ease-in-out;
 }

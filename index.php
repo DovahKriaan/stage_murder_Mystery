@@ -1,3 +1,3 @@
 <?php
-include("html/home.html")
+include("ontvang.php");
  ?>
