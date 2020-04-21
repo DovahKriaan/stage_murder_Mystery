@@ -40,11 +40,11 @@ if (isset($_GET['retrieve'])) {
 
 <header>
     <h2>SQL Murderer</h2>
-    <nav>
+    <nav> 
       <ul>
         <li><a href="home.html">Home</a></li> 
         <li> | </li>
-        <li><a href="../generate.php"> SQL Game</a></li>
+        <li><a href="../ontvang2.php"> SQL Game</a></li>
         <li> | </li>
         <li><a href="../html/about.html"> About</a></li>
         <li> | </li>
