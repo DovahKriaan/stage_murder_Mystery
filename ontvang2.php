@@ -1,19 +1,23 @@
+<?php
 
-<?php 
-
-
+include("generate.php");
 include("config.php");
 
-$sql = "SELECT crime_scene_report.description FROM crime_scene_report where crime_scene_report.date = 01012020";
+echo '
+<form >
+<input type="text" name="person_name">
+<input type="submit" value="submit">
+</form>';
 
-$sql_exc = $DB_connect->prepare($sql);
-$sql_exc->execute();
+$person_name = @$_POST["person_name"];
 
-$search = $DB_connect->query($sql);
-$row = $search->fetch(PDO::FETCH_ASSOC);
+ $stmt = $DB_connect->prepare("SELECT person.name , person.id , interview.person_id FROM person, interview where person.name = '$person_name' limit 3");
+$stmt->execute($person_name);
+$row = $stmt->fetch();
 
-while ($row = $search->fetch(PDO::FETCH_ASSOC)) {
-   echo '<br>' . $row["description"] . '<br>'; 
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    echo "<br>" . $row['name']. "<br />\n";
 }
+
 
 ?>
