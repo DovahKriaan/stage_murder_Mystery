@@ -4,7 +4,7 @@ include("config.php");
 
 // $person_name = @$_POST["person_name"];
 
- $stmt = $DB_connect->prepare("SELECT crime_scene_report.description FROM person, crime_scene_report limit 2");
+ $stmt = $DB_connect->prepare("SELECT crime_scene_report.description FROM person, crime_scene_report order by rand() limit 2");
 $stmt->execute();
 $row = $stmt->fetch();
 
