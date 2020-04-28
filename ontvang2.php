@@ -1,23 +1,19 @@
 <?php
 
-include("generate.php");
 include("config.php");
 
-echo '
-<form >
-<input type="text" name="person_name">
-<input type="submit" value="submit">
-</form>';
+// $person_name = @$_POST["person_name"];
 
-$person_name = @$_POST["person_name"];
-
- $stmt = $DB_connect->prepare("SELECT person.name , person.id , interview.person_id FROM person, interview where person.name = '$person_name' limit 3");
-$stmt->execute($person_name);
+ $stmt = $DB_connect->prepare("SELECT crime_scene_report.description FROM person, crime_scene_report limit 2");
+$stmt->execute();
 $row = $stmt->fetch();
 
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-    echo "<br>" . $row['name']. "<br />\n";
+    echo "<br>" . $row['description']. "<br />\n";
 }
 
-
+echo '<br>
+<form action="generate.php" >
+<input type="submit" value="continue">
+</form>';
 ?>

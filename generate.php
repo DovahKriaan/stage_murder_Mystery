@@ -2,9 +2,15 @@
 
 include("config.php");
 
+$stmt = $DB_connect->prepare("SELECT * FROM interview");
+$stmt->execute();
+$row = $stmt->fetch();
+
+echo $row["transcript"] . "<br>";
 
 
-$sql_send = "INSERT INTO crime_scene_report values(`02012020`, murder, hallo)";
-
-
+echo '<br>
+<form action="invoer.php" >
+<input type="submit" value="continue">
+</form>';
 ?>
