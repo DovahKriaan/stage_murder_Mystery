@@ -54,7 +54,7 @@ if (isset($_GET['retrieve'])) {
   </header>
   <main>
     <h1>Generate Random Murder Mystery</h1>
-    <form action="ontvang2.php" method="">
+    <form action="invoer.php" method="">
     <button type="submit" name="retrieve">Generate names</button>
 </form>
 </main>
