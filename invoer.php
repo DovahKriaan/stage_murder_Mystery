@@ -1,5 +1,7 @@
 <?php 
 
+error_reporting(E_WARNING);
+
 require('config.php');
 
 echo '<form action="" method="post">
@@ -13,8 +15,17 @@ $sqlUser = @$_POST["userSQL"];
 //connect, execute and fetch from the database and show the output within a pre.
 $stmt = $DB_connect->prepare($sqlUser);
 $stmt->execute();
-while($row = $stmt->fetch()) {
-    echo '<pre>' . print_r($row) . '</pre>' . '<br>';
+$fetchRow = $row = $stmt->fetch(\PDO::FETCH_BOUND);
+
+for ($i=0; $i < $row ; $i++) { 
+    
+    if($row[$i] != null){
+            echo '<pre>' . $row[$i] . '</pre>' . '<br>';
+    }
+    else {
+        break;
+        }
+    
 }
 
 ?>

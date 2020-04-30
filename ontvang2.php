@@ -4,7 +4,7 @@ include("config.php");
 
 // $person_name = @$_POST["person_name"];
 
- $stmt = $DB_connect->prepare("SELECT crime_scene_report.description FROM person, crime_scene_report order by rand() limit 2");
+ $stmt = $DB_connect->prepare("SELECT crime_scene_report.description FROM crime_scene_report where crime_scene_report.description = `Security footage shows that there were 2 witnesses. The first witness lives at the last house on Gustavus Blvdr. The second witness, named Annabel, lives somewhere on E Glen Park Ave.`"); 
 $stmt->execute();
 $row = $stmt->fetch();
 
