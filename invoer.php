@@ -15,17 +15,11 @@ $sqlUser = @$_POST["userSQL"];
 //connect, execute and fetch from the database and show the output within a pre.
 $stmt = $DB_connect->prepare($sqlUser);
 $stmt->execute();
-$fetchRow = $row = $stmt->fetch(\PDO::FETCH_BOUND);
 
-for ($i=0; $i < $row ; $i++) { 
-    
-    if($row[$i] != null){
-            echo '<pre>' . $row[$i] . '</pre>' . '<br>';
-    }
-    else {
-        break;
-        }
-    
+
+while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+    print_r($row);
+    echo "<br>" . "<br>";
 }
 
 ?>

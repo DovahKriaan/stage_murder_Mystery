@@ -3,17 +3,13 @@
 include("config.php");
 
 // $person_name = @$_POST["person_name"];
-
- $stmt = $DB_connect->prepare("SELECT crime_scene_report.description FROM crime_scene_report where crime_scene_report.description = `Security footage shows that there were 2 witnesses. The first witness lives at the last house on Gustavus Blvdr. The second witness, named Annabel, lives somewhere on E Glen Park Ave.`"); 
+//trying to get the table names outputted to screen
+ $stmt = $DB_connect->prepare("SELECT TABLE_SCHEMA from `sql-murder-mystery.INFORMATION_SCHEMA.TABLES` WHERE TABLE_TYPE = 'BASE TABLE'");
 $stmt->execute();
-$row = $stmt->fetch();
 
-while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-    echo "<br>" . $row['description']. "<br />\n";
+while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+   print_r( $row);
 }
 
-echo '<br>
-<form action="generate.php" >
-<input type="submit" value="continue">
-</form>';
+
 ?>

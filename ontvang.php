@@ -12,6 +12,7 @@ $sql_exc->execute();
 
 $search = $DB_connect->query($sql);
 $row = $search->fetch(PDO::FETCH_ASSOC);
+
 function retrieve_data(){
 while ($row = $search->fetch(PDO::FETCH_ASSOC)) {
     echo '</br>' . $row["name"] . '</br>'; 
