@@ -19,7 +19,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 //     print_r($row);
 // }
 
-for ($i=0; $i < 40 ; $i++) { 
+for ($i=0; $i < 5 ; $i++) { 
     RandMember();
 }
     
@@ -29,10 +29,23 @@ for ($i=0; $i < 40 ; $i++) {
 //create random dates =
 function RandMember(){
     include("config.php");
-
-    $stmt = $DB_connect->prepare("SELECT membership_id,check_in_time, check_out_time from get_fit_now_check_in order by rand()");
+    
+    $stmt = $DB_connect->prepare("SELECT membership_id, check_in_time, check_out_time from get_fit_now_check_in where membership_id IS NOT NULL order by rand()");
     $stmt->execute();
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    $randomDay = rand(1,31);
+    $randomYear = 2020;
+    $randomMonth = rand(1,12);
+
+    if ($randomDay < 10 ) {
+        $randomDay = sprintf("%02d", $randomDay);
+    }
+
+    if ($randomMonth < 10) {
+       $randomMonth = sprintf("%02d", $randomMonth);
+    }
+
 
 $stmt = $DB_connect->prepare("INSERT INTO get_fit_now_check_in 
 (check_in_date,
@@ -46,11 +59,15 @@ $stmt->bindParam(':membership_id', $membership_id);
 $stmt->bindParam(':check_in_time', $check_in_time);
 $stmt->bindParam(':check_out_time', $check_out_time);
 
-$randomDate = 2020 . rand(1,12) . rand(1,31);
+$randomDate = $randomYear . $randomDay . $randomMonth;
+var_dump($randomDate);
 $membership_id = $row['membership_id'];
 $check_in_time = $row['check_in_time'];
 $check_out_time = $row['check_out_time'];
 
-$stmt->execute();
+// $stmt->execute();
+
+
 }
+
 ?>
