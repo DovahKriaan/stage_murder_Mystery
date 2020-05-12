@@ -30,13 +30,16 @@ for ($i=0; $i < 5 ; $i++) {
 function RandMember(){
     include("config.php");
     
-    $stmt = $DB_connect->prepare("SELECT membership_id, check_in_time, check_out_time from get_fit_now_check_in where membership_id IS NOT NULL order by rand()");
+    $stmt = $DB_connect->prepare("SELECT membership_id, check_in_time, check_out_time from get_fit_now_check_in WHERE `membership_id` LIKE '3F8N0' order by rand()");
     $stmt->execute();
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
     $randomDay = rand(1,31);
     $randomYear = 2020;
     $randomMonth = rand(1,12);
+    $minutes = rand(0,60);
+    $hours_in = rand(6,12);
+    $hours_out = rand(13,20);
 
     if ($randomDay < 10 ) {
         $randomDay = sprintf("%02d", $randomDay);
@@ -45,6 +48,15 @@ function RandMember(){
     if ($randomMonth < 10) {
        $randomMonth = sprintf("%02d", $randomMonth);
     }
+    if ($minutes < 10) {
+        $minutes = sprintf("%02d", $minutes);
+     }
+     if ($hours_in < 10) {
+        $hours_in = sprintf("%02d", $hours_in);
+     }
+     if ($hours_out < 10) {
+        $hours_out = sprintf("%02d", $hours_out);
+     }
 
 
 $stmt = $DB_connect->prepare("INSERT INTO get_fit_now_check_in 
@@ -60,12 +72,12 @@ $stmt->bindParam(':check_in_time', $check_in_time);
 $stmt->bindParam(':check_out_time', $check_out_time);
 
 $randomDate = $randomYear . $randomDay . $randomMonth;
-var_dump($randomDate);
 $membership_id = $row['membership_id'];
-$check_in_time = $row['check_in_time'];
-$check_out_time = $row['check_out_time'];
+$check_in_time = $hours_in . $minutes;
+$check_out_time = $hours_out . $minutes;
+var_dump($check_in_time);
 
-// $stmt->execute();
+$stmt->execute();
 
 
 }
