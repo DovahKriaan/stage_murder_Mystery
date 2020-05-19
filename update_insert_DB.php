@@ -15,9 +15,6 @@ $stmt = $DB_connect->prepare("SELECT membership_id from get_fit_now_check_in ord
 $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-// while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-//     print_r($row);
-// }
 
 for ($i=0; $i < 5 ; $i++) { 
     RandMember();
@@ -30,8 +27,8 @@ for ($i=0; $i < 5 ; $i++) {
 function RandMember(){
     include("config.php");
     
-    $stmt = $DB_connect->prepare("SELECT membership_id, check_in_time, check_out_time from get_fit_now_check_in WHERE `membership_id` LIKE '3F8N0' order by rand()");
-    $stmt->execute();
+    $stmt = $DB_connect->prepare("SELECT membership_id, check_in_time, check_out_time from get_fit_now_check_in order by rand()");
+    $stmt->execute();   
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
     $randomDay = rand(1,31);

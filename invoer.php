@@ -1,9 +1,18 @@
 <?php 
 
-error_reporting(E_WARNING);
+// error_reporting(E_WARNING);
 
 require('config.php');
 
+$stmt = $DB_connect->prepare("SELECT * from person where id < 10145 order by rand()");
+$stmt->bindParam(":random_int", $random_int);
+$stmt->execute();
+
+$rowForZin = $stmt->fetch(PDO::FETCH_ASSOC);
+$rowForZinSecondStreet = $stmt->fetch(PDO::FETCH_ASSOC);
+
+echo " there were 2 witness, 1 lived at " . $rowForZin["address_street_name"] . " and the second one is called " . $rowForZin["name"] . " and lives somewhere at " . $rowForZinSecondStreet["address_street_name"];
+echo "<br>" . "<br>";
 echo '<form action="" method="post">
 <input type="text" name="userSQL">
 <input type="submit" value="submitSQL">
@@ -13,13 +22,18 @@ echo '<form action="" method="post">
 $sqlUser = @$_POST["userSQL"];
 
 //connect, execute and fetch from the database and show the output within a pre.
-$stmt = $DB_connect->prepare($sqlUser);
-$stmt->execute();
+$stmt2 = $DB_connect->prepare($sqlUser);
+$stmt2->execute();
 
 
-while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+while($row = $stmt2->fetch(PDO::FETCH_ASSOC)){
     print_r($row);
     echo "<br>" . "<br>";
+}
+
+function CheckSolution(){
+
+    
 }
 
 ?>
