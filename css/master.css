@@ -1,0 +1,60 @@
+body {font-family: 'Luckiest Guy', cursive; margin: 0; min-height: 100%;width: 100%;}
+
+footer{
+margin: 0;
+}
+
+nav  ul li {
+list-style: none;
+float: left;
+font-size: 30px;
+}
+
+ul li a{
+color: black;
+text-decoration: none;
+padding-right: 15px;
+padding-left: 15px;
+}
+
+ul li a:hover{
+color: black;
+text-decoration: none;
+font-size: xx-large;
+transform: scale(1.2);
+transition: all .2s ease-in-out ;
+}
+header h2{
+float: right;
+font-size: 36px;
+margin-top: -0px;
+padding-right: 20px;
+}
+main h1 {
+padding-top: 350px;
+
+}
+main{
+text-align: center;
+}
+
+main form input{
+background-color: black;
+color: white;
+font-size: 36px; 
+border-radius: 30px;
+font-weight: bold;
+}
+
+main form input:hover{
+transform: scale(1.2);
+transition: all .5s ease-in-out;
+}
+
+.container .inner {
+padding-top: 11px;
+width: 0;
+height:0;
+border-bottom: 457px solid black;
+border-right: 1920px solid transparent;
+}
