@@ -31,6 +31,7 @@ while($row = $stmt2->fetch(PDO::FETCH_ASSOC)){
     echo "<br>" . "<br>";
 }
 
+<<<<<<< HEAD
 echo "the form below is for checking your solution :  <br><br>";
 
 CheckSolution();
@@ -60,4 +61,11 @@ function CheckSolution(){
 
 
 
+=======
+function CheckSolution(){
+
+    
+}
+
+>>>>>>> 2e3007ebadc8d1ae23db457fae2af85d2186b812
 ?>
