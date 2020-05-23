@@ -1,0 +1,57 @@
+[2020-05-23 21:39:57.767] [sharedprocess] [info] main {"machineId":"3a5b38cabbcc72c6202100da391d820668032c0c920f535e4e9e475eea17313d","windowId":2}
+[2020-05-23 21:39:57.793] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/opt/lampp/htdocs/code/User/snippets'
+[2020-05-23 21:40:26.017] [sharedprocess] [info] Installing extension: jprestidge.theme-material-theme
+[2020-05-23 21:40:26.376] [sharedprocess] [info] Downloaded extension: jprestidge.theme-material-theme /tmp/7b19199b-017c-4e32-ad15-1ba05d41d05f
+[2020-05-23 21:40:26.405] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.jprestidge.theme-material-theme-1.0.1: jprestidge.theme-material-theme
+[2020-05-23 21:40:26.406] [sharedprocess] [info] Renamed to /root/.vscode/extensions/jprestidge.theme-material-theme-1.0.1
+[2020-05-23 21:40:26.407] [sharedprocess] [info] Installation completed. jprestidge.theme-material-theme
+[2020-05-23 21:40:26.474] [sharedprocess] [info] Extensions installed successfully: jprestidge.theme-material-theme
+[2020-05-23 21:40:35.202] [sharedprocess] [info] Installing extension: pkief.material-icon-theme
+[2020-05-23 21:40:35.641] [sharedprocess] [info] Downloaded extension: pkief.material-icon-theme /tmp/3c032ab4-286c-4413-a726-4debbc5b0e14
+[2020-05-23 21:40:36.061] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.pkief.material-icon-theme-4.1.0: pkief.material-icon-theme
+[2020-05-23 21:40:36.061] [sharedprocess] [info] Renamed to /root/.vscode/extensions/pkief.material-icon-theme-4.1.0
+[2020-05-23 21:40:36.062] [sharedprocess] [info] Installation completed. pkief.material-icon-theme
+[2020-05-23 21:40:36.134] [sharedprocess] [info] Extensions installed successfully: pkief.material-icon-theme
+[2020-05-23 21:40:37.779] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-05-23 21:40:45.457] [sharedprocess] [info] Installing extension: ritwickdey.liveserver
+[2020-05-23 21:40:46.324] [sharedprocess] [info] Downloaded extension: ritwickdey.liveserver /tmp/744ae788-ee2e-4af8-91c8-b9ffcee8f162
+[2020-05-23 21:40:46.729] [sharedprocess] [info] Installing extension: ms-vsliveshare.vsliveshare
+[2020-05-23 21:40:47.692] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.ritwickdey.liveserver-5.6.1: ritwickdey.liveserver
+[2020-05-23 21:40:47.693] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ritwickdey.liveserver-5.6.1
+[2020-05-23 21:40:47.693] [sharedprocess] [info] Installation completed. ritwickdey.liveserver
+[2020-05-23 21:40:47.815] [sharedprocess] [info] Extensions installed successfully: ritwickdey.liveserver
+[2020-05-23 21:40:50.073] [sharedprocess] [info] Downloaded extension: ms-vsliveshare.vsliveshare /tmp/7214c3f2-0801-4f12-af3c-6ff4cf061afd
+[2020-05-23 21:40:50.650] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.ms-vsliveshare.vsliveshare-1.0.2236: ms-vsliveshare.vsliveshare
+[2020-05-23 21:40:50.651] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-vsliveshare.vsliveshare-1.0.2236
+[2020-05-23 21:40:50.652] [sharedprocess] [info] Installation completed. ms-vsliveshare.vsliveshare
+[2020-05-23 21:40:50.714] [sharedprocess] [info] Extensions installed successfully: ms-vsliveshare.vsliveshare
+[2020-05-23 21:40:54.423] [sharedprocess] [info] Installing extension: felixfbecker.php-intellisense
+[2020-05-23 21:40:55.658] [sharedprocess] [info] Downloaded extension: felixfbecker.php-intellisense /tmp/c509ecd4-d49c-44f3-9bc3-f424b3852b68
+[2020-05-23 21:40:55.944] [sharedprocess] [info] Installing extension: felixfbecker.php-debug
+[2020-05-23 21:40:56.436] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.felixfbecker.php-intellisense-2.3.14: felixfbecker.php-intellisense
+[2020-05-23 21:40:56.436] [sharedprocess] [info] Renamed to /root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14
+[2020-05-23 21:40:56.438] [sharedprocess] [info] Installation completed. felixfbecker.php-intellisense
+[2020-05-23 21:40:56.595] [sharedprocess] [info] Downloaded extension: felixfbecker.php-debug /tmp/6d053d4a-b95d-42c2-8551-444e6a8130e9
+[2020-05-23 21:40:56.645] [sharedprocess] [info] Extensions installed successfully: felixfbecker.php-intellisense
+[2020-05-23 21:40:56.897] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.felixfbecker.php-debug-1.13.0: felixfbecker.php-debug
+[2020-05-23 21:40:56.897] [sharedprocess] [info] Renamed to /root/.vscode/extensions/felixfbecker.php-debug-1.13.0
+[2020-05-23 21:40:56.899] [sharedprocess] [info] Installation completed. felixfbecker.php-debug
+[2020-05-23 21:40:56.960] [sharedprocess] [info] Extensions installed successfully: felixfbecker.php-debug
+[2020-05-23 21:40:57.476] [sharedprocess] [info] Installing extension: felixfbecker.php-pack
+[2020-05-23 21:40:58.108] [sharedprocess] [info] Downloaded extension: felixfbecker.php-pack /tmp/301a2ca6-4c73-473d-b5fb-232e82454bc5
+[2020-05-23 21:40:58.113] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.felixfbecker.php-pack-1.0.2: felixfbecker.php-pack
+[2020-05-23 21:40:58.113] [sharedprocess] [info] Renamed to /root/.vscode/extensions/felixfbecker.php-pack-1.0.2
+[2020-05-23 21:40:58.113] [sharedprocess] [info] Installation completed. felixfbecker.php-pack
+[2020-05-23 21:40:58.262] [sharedprocess] [info] Extensions installed successfully: felixfbecker.php-pack
+[2020-05-23 21:41:05.530] [sharedprocess] [info] Installing extension: ms-azuretools.vscode-docker
+[2020-05-23 21:41:06.162] [sharedprocess] [info] Downloaded extension: ms-azuretools.vscode-docker /tmp/dc760cef-671a-43bc-bc59-a4a5d8e10c7e
+[2020-05-23 21:41:06.344] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.ms-azuretools.vscode-docker-1.2.0: ms-azuretools.vscode-docker
+[2020-05-23 21:41:06.344] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-azuretools.vscode-docker-1.2.0
+[2020-05-23 21:41:06.347] [sharedprocess] [info] Installation completed. ms-azuretools.vscode-docker
+[2020-05-23 21:41:06.437] [sharedprocess] [info] Extensions installed successfully: ms-azuretools.vscode-docker
+[2020-05-23 21:41:15.077] [sharedprocess] [info] Installing extension: p1c2u.docker-compose
+[2020-05-23 21:41:15.646] [sharedprocess] [info] Downloaded extension: p1c2u.docker-compose /tmp/f89bd0fa-fc3c-4ae7-a46b-2367651e860d
+[2020-05-23 21:41:15.892] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.p1c2u.docker-compose-0.3.5: p1c2u.docker-compose
+[2020-05-23 21:41:15.892] [sharedprocess] [info] Renamed to /root/.vscode/extensions/p1c2u.docker-compose-0.3.5
+[2020-05-23 21:41:15.892] [sharedprocess] [info] Installation completed. p1c2u.docker-compose
+[2020-05-23 21:41:16.044] [sharedprocess] [info] Extensions installed successfully: p1c2u.docker-compose
