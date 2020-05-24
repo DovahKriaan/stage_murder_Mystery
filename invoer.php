@@ -4,7 +4,7 @@
 
 require('config.php');
 
-$stmt = $DB_connect->prepare("SELECT * from person where id < 10145 order by rand()");
+$stmt = $DB_connect->prepare("SELECT * from person order by rand()");
 $stmt->bindParam(":random_int", $random_int);
 $stmt->execute();
 
