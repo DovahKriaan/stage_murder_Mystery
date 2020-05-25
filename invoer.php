@@ -11,7 +11,8 @@ $stmt->execute();
 $rowForZin = $stmt->fetch(PDO::FETCH_ASSOC);
 $rowForZinSecondStreet = $stmt->fetch(PDO::FETCH_ASSOC);
 
-echo " there were 2 witness, 1 lived at " . $rowForZin["address_street_name"] . " and the second one is called " . $rowForZin["name"] . " and lives somewhere at " . $rowForZinSecondStreet["address_street_name"];
+
+echo "  there were 2 witness, 1 lived at " . $rowForZin["address_street_name"] . " and the second one is called " . $rowForZin["name"] . " and lives somewhere at " . $rowForZinSecondStreet["address_street_name"];
 echo "<br>" . "<br>";
 echo '<form action="" method="post">
 <input type="text" name="userSQL">
@@ -36,6 +37,8 @@ CheckSolution();
 
 function CheckSolution(){
 
+    $arraySolution = array('101568', '101859', '139633', '101568');
+
     echo '<form action="" method="post">
     <input type="text" name="userSQLSolution">
     <input type="submit" value="submit your SQL Solution">
@@ -43,17 +46,16 @@ function CheckSolution(){
 
     $userSQLSolution = @$_POST['userSQLSolution'];
   
-    if ($userSQLSolution == "") {
+    for ($i=0; $i < $arraySolution ; $i++) { 
+        if ($userSQLSolution == "") {
             echo "";
         }
-        else{
-            if ($userSQLSolution == 'Tama' || $userSQLSolution == 'tama') {
-               echo "you were right you get a promotion!";
-            }
-            else{
-                echo "sorry you are wrong detective";
+        else {
+            if ($userSQLSolution == $arraySolution[$i]) {
+                echo "congrats you've won";
             }
         }
+    }
     
 }
 
